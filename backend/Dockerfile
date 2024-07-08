@@ -1,5 +1,10 @@
-# Use an official Python runtime as a parent image
-FROM python:3.10-slim
+# Use the official Python image from the Docker Hub
+FROM python:3.12-slim
+
+# Set environment variables to avoid prompts during Poetry installation
+ENV POETRY_HOME="/opt/poetry" \
+    POETRY_VIRTUALENVS_CREATE=false \
+    POETRY_NO_INTERACTION=1
 
 # Set the working directory in the container
 WORKDIR /app
@@ -11,13 +16,22 @@ RUN pip install poetry
 COPY pyproject.toml poetry.lock ./
 
 # Install dependencies using Poetry
-RUN poetry config virtualenvs.create false && poetry install --no-dev
+RUN poetry config virtualenvs.create false && poetry install --only main
 
-# Copy the rest of the application code
-COPY . .
+# Copy the rest of the working directory contents into the container
+COPY . /app
 
-# Expose port 80 for the application
-EXPOSE 80
+# Set PYTHONPATH to include the 'app' directory
+ENV PYTHONPATH="/app"
 
-# Command to run the FastAPI application using Uvicorn
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+# Make the prestart script executable
+RUN chmod +x /app/prestart.sh
+
+# Debug: List files in the /app directory to ensure all files are present
+RUN ls -l /app
+
+# Expose the backend port
+EXPOSE 8000
+
+# Start the prestart script and then the FastAPI server
+CMD ["bash", "-c", "/app/prestart.sh && uvicorn app.main:app --host 0.0.0.0 --port 8000"]

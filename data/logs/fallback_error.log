@@ -1,0 +1,116 @@
+2024/07/07 12:28:07 [error] 168#168: *3 open() "/var/www/html/api" failed (2: No such file or directory), client: 172.21.0.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
+2024/07/07 12:28:13 [alert] 168#168: *917 512 worker_connections are not enough while connecting to upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost/api"
+2024/07/07 13:14:19 [error] 183#183: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.22.0.1, server: nginxproxymanager, request: "GET /api/ HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost:8090", referrer: "http://localhost:8090/nginx/redirection"
+2024/07/07 13:31:40 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/nginx/redirection"
+2024/07/07 13:32:11 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/nginx/redirection"
+2024/07/07 13:32:42 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/nginx/redirection"
+2024/07/07 13:33:13 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/nginx/redirection"
+2024/07/07 13:33:44 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/nginx/redirection"
+2024/07/07 13:34:15 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/nginx/redirection"
+2024/07/07 13:34:46 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/nginx/redirection"
+2024/07/07 13:35:17 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/nginx/redirection"
+2024/07/07 13:35:32 [error] 186#186: *1 open() "/var/www/html/api/nginx/proxy-hosts" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/nginx/proxy-hosts?expand=owner,access_list,certificate HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/nginx/proxy"
+2024/07/07 13:35:34 [error] 186#186: *1 open() "/var/www/html/api/nginx/proxy-hosts" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/nginx/proxy-hosts?expand=owner,access_list,certificate HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/nginx/proxy"
+2024/07/07 13:35:36 [error] 186#186: *1 open() "/var/www/html/nginx/proxy" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /nginx/proxy HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/login"
+2024/07/07 13:35:41 [alert] 186#186: *984 512 worker_connections are not enough while connecting to upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost:8090/nginx/proxy"
+2024/07/07 13:35:59 [error] 186#186: *1 open() "/var/www/html/nginx/proxy" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /nginx/proxy HTTP/1.1", host: "localhost:8090"
+2024/07/07 13:36:07 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:36:23 [error] 186#186: *1 open() "/var/www/html/api/tokens" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "POST /api/tokens HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/login"
+2024/07/07 13:36:31 [error] 186#186: *1 open() "/var/www/html/api/tokens" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "POST /api/tokens HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/login"
+2024/07/07 13:36:39 [error] 186#186: *1 open() "/var/www/html/api/tokens" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "POST /api/tokens HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/login"
+2024/07/07 13:36:40 [error] 186#186: *1 open() "/var/www/html/api/tokens" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "POST /api/tokens HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/login"
+2024/07/07 13:36:52 [error] 186#186: *1 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:37:02 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:37:02 [error] 186#186: *1 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:37:33 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:37:33 [error] 186#186: *1 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:38:02 [error] 186#186: *1 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:39:08 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:39:08 [error] 186#186: *1 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:39:20 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:39:20 [error] 186#186: *1 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:39:43 [error] 186#186: *1 "/var/www/html/api/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/ HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:39:43 [error] 186#186: *1 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:45:30 [error] 186#186: *999 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:46:15 [error] 186#186: *1002 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:48:24 [error] 184#184: *1 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.24.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:48:28 [alert] 184#184: *880 512 worker_connections are not enough while connecting to upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost:8090/login"
+2024/07/07 13:49:54 [error] 184#184: *1 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.24.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 13:50:08 [error] 184#184: *1 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.24.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/07 14:02:07 [error] 175#175: *3 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.24.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090"
+2024/07/07 14:05:02 [error] 175#175: *5 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.24.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090"
+2024/07/07 14:16:54 [error] 184#184: *1 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.25.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090"
+2024/07/07 14:16:57 [alert] 184#184: *938 512 worker_connections are not enough while connecting to upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost:8090/login"
+2024/07/07 14:17:13 [error] 185#185: *2 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.25.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090"
+2024/07/07 14:18:09 [error] 175#175: *2 open() "/var/www/html/login" failed (2: No such file or directory), client: 172.25.0.1, server: localhost-nginx-proxy-manager, request: "GET /login HTTP/1.1", host: "localhost:8090"
+2024/07/07 14:30:24 [warn] 156#156: server name "kmoni.strangled.net/api" has suspicious symbols in /data/nginx/proxy_host/2.conf:20
+2024/07/07 14:34:06 [warn] 156#156: server name "kmoni.strangled.net/api" has suspicious symbols in /data/nginx/proxy_host/2.conf:20
+2024/07/07 14:34:06 [warn] 156#156: server name "kmoni.strangled.net/docs" has suspicious symbols in /data/nginx/proxy_host/3.conf:20
+2024/07/07 14:35:40 [warn] 156#156: server name "kmoni.strangled.net/api" has suspicious symbols in /data/nginx/proxy_host/2.conf:20
+2024/07/07 14:35:40 [warn] 156#156: server name "kmoni.strangled.net/docs" has suspicious symbols in /data/nginx/proxy_host/3.conf:20
+2024/07/07 14:36:01 [warn] 156#156: server name "kmoni.strangled.net/api" has suspicious symbols in /data/nginx/proxy_host/2.conf:20
+2024/07/07 14:36:01 [warn] 156#156: server name "kmoni.strangled.net/docs" has suspicious symbols in /data/nginx/proxy_host/3.conf:20
+2024/07/07 14:36:11 [warn] 156#156: server name "kmoni.strangled.net/api" has suspicious symbols in /data/nginx/proxy_host/2.conf:20
+2024/07/07 14:36:11 [warn] 156#156: server name "kmoni.strangled.net/docs" has suspicious symbols in /data/nginx/proxy_host/3.conf:20
+2024/07/07 15:16:22 [warn] 156#156: server name "kmoni.strangled.net/api" has suspicious symbols in /data/nginx/proxy_host/2.conf:20
+2024/07/07 15:16:22 [warn] 156#156: server name "kmoni.strangled.net/docs" has suspicious symbols in /data/nginx/proxy_host/3.conf:20
+2024/07/07 15:16:28 [warn] 156#156: server name "kmoni.strangled.net/api" has suspicious symbols in /data/nginx/proxy_host/2.conf:20
+2024/07/07 15:16:28 [warn] 156#156: server name "kmoni.strangled.net/docs" has suspicious symbols in /data/nginx/proxy_host/3.conf:20
+2024/07/07 15:16:33 [warn] 156#156: server name "kmoni.strangled.net/docs" has suspicious symbols in /data/nginx/proxy_host/3.conf:20
+2024/07/07 15:19:02 [warn] 156#156: server name "delightdev.net/api" has suspicious symbols in /data/nginx/proxy_host/6.conf:20
+2024/07/07 15:21:15 [warn] 156#156: server name "delightdev.net/api" has suspicious symbols in /data/nginx/proxy_host/6.conf:20
+2024/07/07 15:21:15 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 15:21:56 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 15:22:45 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 15:22:45 [warn] 156#156: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 15:22:55 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 15:22:55 [warn] 156#156: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 15:23:31 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 15:23:31 [warn] 156#156: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 15:26:05 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 15:26:05 [warn] 156#156: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 15:27:24 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 15:27:24 [warn] 156#156: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 15:27:52 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 15:27:52 [warn] 156#156: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 15:28:03 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 15:28:03 [warn] 156#156: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 15:36:47 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 15:36:47 [warn] 156#156: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 15:36:58 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 15:36:58 [warn] 156#156: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 16:00:38 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 16:00:38 [warn] 156#156: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 16:00:49 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 16:00:49 [warn] 156#156: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 16:01:29 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 16:01:29 [warn] 156#156: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 16:04:28 [warn] 156#156: server name "delightdev.ng/doc" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 16:04:28 [warn] 156#156: server name "app.delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 16:05:23 [warn] 156#156: server name "app.delightdev.ng/docs" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 16:05:23 [warn] 156#156: server name "app.delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 16:06:12 [warn] 156#156: server name "app.delightdev.ng/docs" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 16:06:12 [warn] 156#156: server name "app.delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 16:06:23 [warn] 156#156: server name "app.delightdev.ng/docs" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 16:06:23 [warn] 156#156: server name "app.delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 16:10:54 [warn] 156#156: server name "app.delightdev.ng/docs" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 16:10:54 [warn] 156#156: server name "app.delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 16:11:04 [warn] 156#156: server name "app.delightdev.ng/docs" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 16:11:04 [warn] 156#156: server name "app.delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 16:47:38 [warn] 156#156: server name "app.delightdev.ng/docs" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 16:47:38 [warn] 156#156: server name "app.delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 16:47:51 [warn] 156#156: server name "app.delightdev.ng/docs" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 16:47:51 [warn] 156#156: server name "app.delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 17:58:44 [warn] 160#160: server name "app.delightdev.ng/docs" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 17:58:44 [warn] 160#160: server name "app.delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 17:59:39 [warn] 160#160: server name "app.delightdev.ng/docs" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 17:59:39 [warn] 160#160: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 17:59:59 [warn] 160#160: server name "delightdev.ng/docs" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 17:59:59 [warn] 160#160: server name "delightdev.ng/api" has suspicious symbols in /data/nginx/proxy_host/8.conf:20
+2024/07/07 18:03:57 [error] 189#189: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.28.0.1, server: nginxproxymanager, request: "GET /api/ HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost:8090", referrer: "http://localhost:8090/nginx/proxy"
+2024/07/07 18:16:55 [error] 190#190: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.30.0.1, server: nginxproxymanager, request: "GET /api/ HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost:8090", referrer: "http://localhost:8090/nginx/proxy"
+2024/07/07 19:03:41 [error] 188#188: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: nginxproxymanager, request: "GET /api/ HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost:8090", referrer: "http://localhost:8090/nginx/certificates"
+2024/07/07 19:19:41 [error] 188#188: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.16.1, server: nginxproxymanager, request: "GET /api/tokens HTTP/1.1", upstream: "http://127.0.0.1:3000/tokens", host: "localhost:8090", referrer: "http://localhost:8090/nginx/certificates"
+2024/07/07 20:55:31 [warn] 159#159: server name "delightdev.ng/docs" has suspicious symbols in /data/nginx/proxy_host/7.conf:20
+2024/07/07 23:21:07 [error] 186#186: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.23.0.1, server: nginxproxymanager, request: "GET /api/ HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost:8090", referrer: "http://localhost:8090/"
+2024/07/08 09:00:04 [error] 186#186: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.0.1, server: nginxproxymanager, request: "GET /api/ HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost:8090", referrer: "http://localhost:8090/nginx/proxy"

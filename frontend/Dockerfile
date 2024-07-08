@@ -4,8 +4,10 @@ FROM node:18 as build
 WORKDIR /app
 
 # Install npm dependencies
-COPY package*.json ./
-RUN npm install 
+COPY package.json package-lock.json ./
+
+# install the dependencies
+RUN npm install
 
 # Copy the rest of the application files
 COPY . .
@@ -16,7 +18,8 @@ RUN npm run build
 # Stage 2: Serve React frontend with nginx
 FROM nginx:alpine
 
-COPY --from=build /app/build /usr/share/nginx/html
+# Copy built files from the build stage
+COPY --from=build /app/dist /usr/share/nginx/html
 
 EXPOSE 80
 

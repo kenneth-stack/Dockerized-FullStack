@@ -12,10 +12,14 @@ services:
   backend:
     build:
       context: ./backend
+    ports:
+      - "8000:8000"
     environment:
-      DATABASE_URL: postgres://user:password@db:5432/mydatabase
+      - DATABASE_URL=postgresql://user:password@db:5432/mydatabase
+      - FIRST_SUPERUSER=admin@example.com
+      - FIRST_SUPERUSER_PASSWORD=adminpassword
     networks:
-      - webnet
+      - webnet  
 
   db:
     image: postgres:13
@@ -25,6 +29,8 @@ services:
       POSTGRES_DB: mydatabase
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"  
     networks:
       - webnet
 
@@ -39,7 +45,6 @@ services:
     image: jc21/nginx-proxy-manager:latest
     restart: always
     ports:
-      - "80:80"    # HTTP Port
       - "81:81"    # Admin Web Port
       - "443:443"  # HTTPS Port
       - "8090:81"  # Nginx Proxy Manager GUI
