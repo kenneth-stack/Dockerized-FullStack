@@ -18,7 +18,7 @@ COPY pyproject.toml poetry.lock ./
 RUN python -m venv /opt/venv && \
     . /opt/venv/bin/activate && \
     poetry config virtualenvs.path /opt/venv && \
-    poetry install ----no-root
+    poetry install --no-root
 
 # Copy the rest of the working directory contents into the container
 COPY . /app
