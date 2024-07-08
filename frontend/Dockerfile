@@ -9,6 +9,9 @@ COPY package.json package-lock.json ./
 # install the dependencies
 RUN npm install
 
+# Update npm to the latest version
+RUN npm install -g npm@latest
+
 # Copy the rest of the application files
 COPY . .
 
