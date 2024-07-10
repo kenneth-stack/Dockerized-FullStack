@@ -9,12 +9,131 @@ The repository is organized into two main directories:
 - **frontend**: Contains the ReactJS application.
 - **backend**: Contains the FastAPI application and PostgreSQL database integration.
 
-Each directory has its own README file with detailed instructions specific to that part of the application.
+Each directory has its own README file with detailed instructions specific to that part of the application locally on your server without containers. To run the fullstack application with docker compose, follow the instructions in this README file.
+
+## Prerequisites
+
+- Docker
+- Docker Compose
 
 ## Getting Started
 
-To get started with this template, please follow the instructions in the respective directories:
+To run this application locally, please follow the instructions in the respective directories:
 
 - [Frontend README](./frontend/README.md)
 - [Backend README](./backend/README.md)
 
+## Application Services
+
+- **backend**: FastAPI application serving the backend API.
+- **frontend**: Node.js application serving the frontend.
+- **db**: PostgreSQL database for storing application data.
+- **adminer**: Database management tool to interact with the PostgreSQL database.
+- **proxy**: Nginx Proxy Manager to handle SSL certificates and domain management.
+- **nginx**: Nginx web server to serve the frontend and reverse proxy requests to the backend.
+
+## Setup Instructions
+
+1. **Clone the repository**:
+
+   ```sh
+   git clone https://github.com/kenneth-stack/Dockerized-FullStack
+   cd Dockerized-FullStack
+   ```
+2. **Build and start the services**:
+
+   ```sh
+   docker compose up -d
+   ```
+
+3. **Verify the services are running**:
+   - **FastAPI Backend**: [http://localhost/api](http://localhost/api)
+   - **Node.js Frontend**: [http://localhost](http://localhost)
+   - **PostgreSQL Database**: Accessible on port `5432` (no direct browser access)
+   - **Adminer**: [http://localhost:8080](http://localhost:8080)
+   - **Nginx Proxy Manager**: [http://localhost:8090](http://localhost:8090)
+
+## docker-compose.yml break down
+
+### Backend (FastAPI)
+
+- **Directory**: `./backend`
+- **Docker Container**: `fastapi_app`
+- **Port**: `8000`
+- **Environment Variables**:
+  - `POSTGRES_SERVER`: Hostname of the PostgreSQL server.
+  - `POSTGRES_PASSWORD`: Password for the PostgreSQL user.
+
+### Frontend (Node.js)
+
+- **Directory**: `./frontend`
+- **Docker Container**: `nodejs_app`
+- **Port**: `5173`
+
+### Database (PostgreSQL)
+
+- **Docker Image**: `postgres:latest`
+- **Docker Container**: `postgres_db`
+- **Port**: `5432`
+- **Environment Variables**:
+  - `POSTGRES_USER`: Username for PostgreSQL.
+  - `POSTGRES_PASSWORD`: Password for the PostgreSQL user.
+  - `POSTGRES_DB`: Name of the PostgreSQL database.
+- **Volumes**:
+  - `postgres_data`: Persists PostgreSQL data.
+
+### Adminer
+
+- **Docker Image**: `adminer`
+- **Docker Container**: `adminer`
+- **Port**: `8080`
+
+### Proxy (Nginx Proxy Manager)
+
+- **Docker Image**: `jc21/nginx-proxy-manager:latest`
+- **Docker Container**: `nginx_proxy_manager`
+- **Port**: `8090`
+- **Volumes**:
+  - `./data`: Persistent data for the proxy manager.
+  - `./letsencrypt`: SSL certificates.
+
+### Nginx
+
+- **Docker Image**: `nginx:latest`
+- **Docker Container**: `nginx`
+- **Port**: `80`
+- **Volumes**:
+  - `./nginx.conf`: Configuration file for Nginx.
+  - `./proxy.conf`: Proxy parameters for Nginx.
+- **Depends On**:
+  - `frontend`
+  - `backend`
+  - `db`
+  - `adminer`
+  - `proxy`
+
+## Accessing the Application
+
+- **Localhost**: You can access the application via `http://localhost`
+- **Custom Domain**: You can set up your domain to connect to the application using the Nginx Proxy Manager.
+- **You can get your domain from [`https://process.qservers.net`](https://process.qservers.net).
+
+## Troubleshooting
+
+- Ensure Docker and Docker Compose are installed and running.
+
+- Check for any port conflicts on your machine.
+
+- Verify that the .env files are correctly configured.
+
+## Cleanup
+
+To stop the containers and remove the network:
+```sh
+docker-compose down
+```
+
+To remove all Docker containers, images, and volumes (use with caution):
+```sh
+docker system prune -a --volumes
+```
